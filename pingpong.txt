@@ -1,0 +1,133 @@
+How many ping pong balls would it take to fill an
+average-sized school bus?
+Describe each step in your thought process. 
+
+The calculation is estimation-based, so the precise measurements are unknown and analogs are chosen to
+determine numerical measurements.
+
+Determine the approximate size of the school bus:
+    The calculation uses adult estimates because high school students and adult supervisors fit on buses.
+
+    The bus has to seat a class of children.
+        Approximate that the bus has a 32 person capacity.
+        There are 4 seats per row.
+        Therefore, the bus has 8 rows of seats.
+
+    Calculation needs to subtract out the space taken up by seats and account for the entry stairs and
+    driver's seat.
+
+    Approximate that the aisle is equivalent to the width of a person
+        The width of the bus is 5 people wide; 4 people for each of the seats and 1 person for the aisle.
+
+    The height is assumed to be 6-feet, because of the adult person scale and it is a nice round number.
+        The top of bus is rounded, but that is ignored to simplify the estimation.
+
+    The length of row is 3 feet, accounting for 2 feet for seat and 1 foot for leg room.
+        The length of the entire seated section is 24 feet (3*8 rows of seats).
+
+    The set of stairs is assumed to have 2 stairs.
+        Each stair is .5 feet high, 2 feet wide, .5 feet deep.
+        Three 2' x 0.5' x 0.5'(W x L x H) rectangles, two for the space above each stair and the third
+        for the space above the space above the lower stair.
+
+            S[][]   S: the stair
+            SSS[]   []: the space
+
+    For the driver's seat, add another row to the length of the bus but subtract out the space of one
+    seat and not two.
+
+
+The size of a ping pong ball and using it as a unit of measurement:
+    Wikipedia says the diameter of a ping pong ball is 40mm diameter  or ~1.6 in. I am lacking
+    experience for a good estimate.
+    
+    The relative size of 40mm in relation to an adult person estimate.
+        A person is estimated to be about 2 feet wide and 6 feet tall, for the convenience of round
+        numbers.
+        The width of a person is equivalent to 15 ping pong balls.
+        And the height of a person is equivalent to 45 ping pong balls.
+
+
+Ping pong ball stacking
+    Negate entropy and assume an ordered arrangement of ping pong balls carefully placed to fit
+    the maximum number of balls.
+
+    The maximum arrangement is not stacked directly on top of on another, and some physical
+    constraints should be taken into account. The most efficient use of space is to stack the ping
+    pong balls like this:
+    o o o
+     o o
+    o o o.
+        The height estimation needs to account for the height lost from overlap of the levels of
+        ping pong balls.
+        Marbles were stacked to determine the amount of overlap from stacking. The image pingpong.JPG
+        shows the stack. The representation illustrates that about a third of the height of the ping
+        pong ball is lost to overlap. The first row will maintain its full height.
+        
+        Every other level has n-1 columns and rows to account for the stacking, n being the maximum
+        number of columns and rows.
+
+    height = 1.6"+(n-1*(1.6*(2/3))) n being the number of levels of balls
+    n = ((h-1.6)/(1.6*(2/3))) + 1
+
+Assume windows are closed and the space is contained.
+
+Width
+      5 people wide at 2 feet per person -> 10 feet ->
+      75 ping pong balls to cover the width of the bus
+Length
+      9 rows at 3 feet per row -> 27 feet -> 202.5 ping pong balls
+       -> round to 203 because estimations are more likely under
+Height
+     one person at 6 feet -> Using equation 67 levels of ping pong balls
+      -> 34 odd number levels, 33 even number levels
+
+Odd level: array of 75x203 : 15,225 ping pong balls
+Even level: array of 74x202 : 14,948 ping pong balls
+
+Total assuming empty bus =
+  (34*15225) + (33*14948) = 517,650 + 493,284 = 1,010,934 ping pong balls
+
+Stairs
+    width: 2 feet -> 15 ping pong balls
+    length: 0.5 feet -> 3.75 -> round up to 4 ping pong balls
+    height: 0.5 feet -> using equation 5.125 levels -> 3 odd number levels, 2 even number levels
+    odd level: 15x4 -> 60 ping pong balls
+    even level: 14x3 -> 42 ping pong balls
+    Stairs total: (3*60) + (2*42) = 180 + 84 = 264 ping pong balls
+
+Total for an empty bus with stairs = 1,011,198 ping pong balls
+
+Space taken up by seats
+    Seats have a horizontal portion and a vertical portion that both need to be taken into account.
+        Estimate two levels high for horizontal portion and a 2 feet (already estimated when calculating
+        the length of the row) by 4 feet (width of two people) rectangle.
+        For the vertical portion estimate a two ping pong ball depth, 4 feet wide (match the horizontal
+        portion) and 3 feet high (backing equivalent to half the height of a person).
+    
+    horizontal
+        2 feet (15 balls) x 4 feet (30 balls) ->
+        large array (15x30) 450 balls, small array (14x29) 406 balls
+        height -> 1 large array, 1 small array
+        total = 856 balls
+
+    vertical
+        2 balls x 4 feet (30 balls) ->
+         large array (2x30) 60 balls, small array (1x29) 29 balls
+         height -> 3 feet -> Using equation 33.25 levels round down to 33
+          -> 17 large arrays, 16 small arrays
+        total = 17(60) + 16(29) = 1020 + 464 = 1,484
+
+    Seat -> -2,340 ping pong balls
+    17 seats -> -39,780 ping pong balls
+
+Total ping pong balls (removing area taken up by seating) = 1,011,198 - 39,780 =
+
+  971,418 ping pong balls
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+Just in case you think more in bullet points and less in sentences.
+
+How many ping pong balls would it take to fill an
+average-sized school bus?
+Describe each step in your thought process. 
+
+
+Size of the school bus
+  Using adult estimates because high school students
+   and adult supervisors fit on buses
+
+  has to seat a class of children -> approximate 32
+  4 seats per row -> 8 rows of seats
+      Need to subtract out the space taken up by seats
+
+  entry stairs and driver's seat
+
+  aisle -> person width
+  Width of the bus is 5 people wide
+
+  height -> like 6-foot?
+      top of bus is rounded -> ignore?
+
+  length of row -> like 3 feet
+      2 feet for seat, 1 foot for leg room
+  length of seated section is 24 feet
+
+  Stairs -> 2 stairs, .5 feet high, 2 feet wide, .5 feet deep
+  (W x L x H) 3 2' x 0.5' x 0.5' rectangles (all 2/3 high ping pong)
+
+ Driver's Seat: add another row, only subtract one seat not two
+
+  Seats:
+  two levels high for horizontal portion, 2' x 4' rectangle
+  vertical -> two depth, 4 feet wide,  3 feet high
+
+Size of a ping pong ball
+  Wikipedia says 40mm diameter (~1.6 in) (I'm lacking experience for a good estimate)
+  40mm in relative terms
+      person is about 2ft by 6ft (for the convenience of round numbers)
+      15 ping pong balls wide
+      45 ping pong balls high
+))
+Ping pong ball stacking
+  negate entropy-> assume ordered arrangement
+  carefully placed to fit maximum number of balls
+
+  not stacked directly on top of on another
+      o o o
+       o o
+      o o o
+  need account for the height lost from nestling balls
+  stacked marbles and found that they roll counterproductively (sarcastically surprised),
+   and getting a perfect stack is unlikely at best, but assuming
+   the impropable happened (or super friction)
+   lose about a third of the height of the circle in the previous row
+  every other level has n-1 columns and rows
+
+  first level height = ping pong ball
+  2 to top height = 2/3 ping pong ball
+  height = 1.6"+(n-1*(1.6*(2/3))) n being the number of levels of balls
+  n = ((h-1.6)/(1.6*(2/3))) + 1
+
+Assume windows are closed
+
+Width
+      5 people wide -> 10 feet -> 75 ping pong balls to cover the width of the bus
+Length
+      9 rows at 3 feet per row -> 27 feet -> 202.5 ping pong balls
+       -> round to 203 because estimations are more likely under
+Height
+     one person standing -> 6 feet -> Using equation 67 levels of ping pong balls
+      -> 34 odd number levels, 33 even number levels
+
+Odd level: array of 75x203 : 15,225 ping pong balls
+Even level: array of 74x202 : 14,948 ping pong balls
+
+Total assuming empty bus =
+  (34*15225) + (33*14948) = 517,650 + 493,284 = 1,010,934 ping pong balls
+
+Stairs
+    width: 2 feet -> 15 ping pong balls
+    length: 0.5 feet -> 3.75 -> round up to 4 ping pong balls
+    height: 0.5 feet -> using equation 5.125 levels -> 3 odd number levels, 2 even number levels
+    odd level: 15x4 -> 60 ping pong balls
+    even level: 14x3 -> 42 ping pong balls
+    Stairs total: (3*60) + (2*42) = 180 + 84 = 264 ping pong balls
+
+Total for an empty bus with stairs = 1,011,198 ping pong balls
+
+Space taken up by seats
+  horizontal
+    2 feet (15 balls) x 4 feet (30 balls) ->
+     large array (15x30) 450 balls, small array (14x29) 406 balls
+     height -> 1 large array, 1 small array
+    total = 856 balls
+
+  vertical
+    2 balls x 4 feet (30 balls) ->
+     large array (2x30) 60 balls, small array (1x29) 29 balls
+     height -> 3 feet -> Using equation 33.25 levels round down to 33
+      -> 17 large arrays, 16 small arrays
+    total = 17(60) + 16(29) = 1020 + 464 = 1484
+
+  Seat -> -2340 ping pong balls
+  17 seats -> -39,780 ping pong balls
+
+Total ping pong balls (removing area taken up by seating)
+  971,418
+
+
+
