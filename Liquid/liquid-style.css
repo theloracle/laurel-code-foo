@@ -1,0 +1,115 @@
+* {margin: 0;
+   padding: 0;}
+a {text-decoration: none;
+   color: black;}
+   
+html {background-image: url("stripe.png");}
+
+#container {font: small-caps 1em Tahoma,sans-serif;
+		    text-align: center;
+		    background-image:url('6.jpg');
+		    color: white;}
+
+#container h1 {color: white;
+			   text-shadow: 2px 2px black;
+			   font: small-caps bold 2em Tahoma,sans-serif;
+			   padding-top: 2%;}
+#container h2 {color: white;
+		       text-shadow: 2px 2px black;
+			   font: small-caps 1.25em Tahoma,sans-serif;
+			   padding-bottom: 2%;}
+h3 {margin: 0%;
+	padding: 0%;
+	font: small-caps 1em Tahoma,sans-serif;}
+
+#nav {background-image:url('1.png');
+	  margin-bottom: 1em;}
+#nav li {display: inline-block;
+		 list-style: none;
+		 padding: 2%;
+		 position: relative;
+		 background: #353e45;
+		 margin: 0% 1.5%;}
+#nav li a {color: white;}
+#nav li a:hover {color: #090a0c;
+				 text-decoration: underline;}
+#nav li ul {position: absolute;
+			left: 0%;
+			top: 80%;
+			width: 100%;
+			background: #353e45;
+			z-index: 1;
+			display: none;}
+#nav li:hover ul{display: block;}
+#nav li li a {color: white;
+			  background: #353e45;}
+
+
+#col3 {background: #090a0c;
+	   background
+	   float: left;
+	   width: 100%;
+	   overflow: hidden;
+	   position: relative;}
+#col3.transparent {
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}   
+#left-bar {width: 18%;
+		   float: left;
+		   position: relative;
+		   right: 79%;
+		   overflow: hidden;		   
+		   margin: 1% 0%;}
+#left-bar li {list-style: none;
+			  margin-bottom: 1%;
+			  color: white;}
+
+
+#col1 {background: #090a0c;
+	   float: left;
+	   width: 20%;
+	   width: 100%;
+	   position: relative;
+	   left: 60%;}
+#right-bar {width: 18%;
+			float: right;
+			position: relative;
+			right: 81%;
+		    overflow: hidden;
+		    margin: 1% 0%;}		
+#right-bar li {list-style: none;
+			   margin-bottom: 1%;
+			   color: white;}
+#right-bar li a {color: #dedeea;}
+
+
+#col2 {background: #252a2e;
+	   float: left;
+	   width: 100%;
+	   position: relative;
+	   left: 20%;}
+#content {width: 56%;
+		  float: left;
+		  position: relative;
+		  right: 76%;
+		  overflow: hidden;
+		  text-align: justify;
+		  margin: 2% 0%;}
+#content p {margin-bottom: 2%;
+			font: small-caps .9em Tahoma, sans-serif;} 
+#content a {display: inline-block;
+	 		padding: 1% 0%;}
+#content .list-collapse {padding-bottom: 2%;}
+
+	 		
+.collapse-off ul{display: block;}
+.collapse-off h3:before {content: "+ ";}
+.collapse-on ul{display: none;}
+.collapse-on h3:before {content: "-- ";}
+
+#footer a {color: white;}
+
+	
+
