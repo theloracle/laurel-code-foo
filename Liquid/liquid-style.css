@@ -82,7 +82,9 @@ h3 {margin: 0%;
 #right-bar li {list-style: none;
 			   margin-bottom: 1%;
 			   color: white;}
-#right-bar li a {color: #dedeea;}
+#right-bar li a {color: #879baa;}
+#right-bar li a:hover {color: #5e6c78;
+					   content: attr(title);}
 
 
 #col2 {background: #252a2e;
@@ -98,7 +100,7 @@ h3 {margin: 0%;
 		  text-align: justify;
 		  margin: 2% 0%;}
 #content p {margin-bottom: 2%;
-			font: small-caps .9em Tahoma, sans-serif;} 
+			font: small-caps 1em Tahoma, sans-serif;} 
 #content a {display: inline-block;
 	 		padding: 1% 0%;}
 #content .list-collapse {padding-bottom: 2%;}
