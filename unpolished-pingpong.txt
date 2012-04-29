@@ -79,14 +79,16 @@ Total assuming empty bus =
   (34*15225) + (33*14948) = 517,650 + 493,284 = 1,010,934 ping pong balls
 
 Stairs
+    No full height row, all 2/3
+	n = h/1.6*(2/3) 
     width: 2 feet -> 15 ping pong balls
     length: 0.5 feet -> 3.75 -> round up to 4 ping pong balls
-    height: 0.5 feet -> using equation 5.125 levels -> 3 odd number levels, 2 even number levels
+    height: 0.5 feet -> using equation 5.625 levels (round up) -> 3 odd number levels, 3 even number levels
     odd level: 15x4 -> 60 ping pong balls
     even level: 14x3 -> 42 ping pong balls
-    Stairs total: (3*60) + (2*42) = 180 + 84 = 264 ping pong balls
+    Stairs total: (3*60) + (3*42) = 180 +126 = 306 ping pong balls
 
-Total for an empty bus with stairs = 1,011,198 ping pong balls
+Total for an empty bus with stairs = 1,011,240 ping pong balls
 
 Space taken up by seats
   horizontal
@@ -106,7 +108,7 @@ Space taken up by seats
   17 seats -> -39,780 ping pong balls
 
 Total ping pong balls (removing area taken up by seating)
-  971,418
+  971,460
 
 
 
