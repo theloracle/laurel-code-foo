@@ -102,14 +102,15 @@ h3 {margin: 0%;
 #content p {margin-bottom: 2%;
 			font: small-caps 1em Tahoma, sans-serif;} 
 #content a {display: inline-block;
-	 		padding: 1% 0%;}
-#content .list-collapse {padding-bottom: 2%;}
-
+	 		padding: 1% 0%;
+	 		cursor: pointer;}
+#content .list-collapse {padding-bottom: 2%;}\
 	 		
 .collapse-off ul{display: block;}
 .collapse-off h3:before {content: "+ ";}
 .collapse-on ul{display: none;}
 .collapse-on h3:before {content: "-- ";}
+
 
 #footer a {color: white;}
 
